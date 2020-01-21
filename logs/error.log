@@ -1,0 +1,17 @@
+2018/11/06 12:08:45 [error] 9#9: *5 FastCGI sent in stderr: "PHP message: PHP Warning:  file_put_contents(text.txt): failed to open stream: Permission denied in /var/www/index.php on line 2
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/index.php:0
+PHP message: PHP   2. file_put_contents() /var/www/index.php:2" while reading response header from upstream, client: 192.168.1.1, server: 127.0.0.1, request: "GET / HTTP/1.1", upstream: "fastcgi://192.168.1.2:9000", host: "localhost"
+2018/11/06 12:08:45 [error] 9#9: *5 FastCGI sent in stderr: "PHP message: PHP Warning:  file_put_contents(text.txt): failed to open stream: Permission denied in /var/www/index.php on line 2
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/index.php:0
+PHP message: PHP   2. file_put_contents() /var/www/index.php:2" while reading response header from upstream, client: 192.168.1.1, server: 127.0.0.1, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://192.168.1.2:9000", host: "localhost", referrer: "http://localhost/"
+2019/11/18 10:52:55 [error] 6#6: *9 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function print_t() in /var/www/index.php on line 2
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/index.php:0" while reading response header from upstream, client: 172.23.0.1, server: 127.0.0.1, request: "GET / HTTP/1.1", upstream: "fastcgi://172.23.0.2:9000", host: "localhost"
+2019/11/18 10:52:58 [error] 6#6: *11 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function print_t() in /var/www/index.php on line 2
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/index.php:0" while reading response header from upstream, client: 172.23.0.1, server: 127.0.0.1, request: "GET / HTTP/1.1", upstream: "fastcgi://172.23.0.2:9000", host: "localhost"
+2019/11/18 10:53:18 [error] 6#6: *13 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function getallheaders() in /var/www/index.php on line 2
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/index.php:0" while reading response header from upstream, client: 172.23.0.1, server: 127.0.0.1, request: "GET / HTTP/1.1", upstream: "fastcgi://172.23.0.2:9000", host: "localhost"

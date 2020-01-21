@@ -1,0 +1,20 @@
+version: '3'
+services:
+  php-fpm:
+    image: php_rapida
+    volumes:
+      - ./files:/var/www/
+      - ./php-config/php.ini:/usr/local/etc/php/php.ini
+    environment:
+      XDEBUG_CONFIG: "remote_host=host.docker.testing remote_enable=1"
+      PHP_IDE_CONFIG: "serverName=Docker"
+  nginx:
+    build:
+      context: nginx
+    volumes:
+      - ./index.php:/var/www/index.php
+      - ./logs:/var/log/nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - php-fpm
